@@ -96,3 +96,5 @@ n - число вершин (агентов)
 - В случае выбора метода [initTop2](https://github.com/gitmskhl/MultiAgentSystems/blob/8182327325ce9ab84fa31071287ef665cc2a33a6/Task1/src/main/java/ru/spbu/mas/App.java#L60) параметр APP.AGENT_NUMBERS должен быть равен 11
 
 Все эти тонкости связаны просто с тем, что инициализация сделана достаточно коряво. Ее можно сделать нормальной, но это к заданию отношения не имеет.
+
+Во время процесса голосования каждый такт выполняется через 1 секунду. Это установлено [вот тута](https://github.com/gitmskhl/MultiAgentSystems/blob/235ed582e7fcb10c7ebb16a07acaf6eac90511a6/Task1/src/main/java/ru/spbu/mas/DefaultAgent.java#L40) и если не хочется ждать по 1 секунде на каждый такт, то просто поставьте значение в миллисекундах.
