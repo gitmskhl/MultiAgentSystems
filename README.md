@@ -86,7 +86,7 @@ n - число вершин (агентов)
 
 [Инструкция к установке](https://www.math.spbu.ru/user/gran/PP/JADE.pdf)
 
-В приведенном решении есть файлы [build.gradle](https://github.com/gitmskhl/MultiAgentSystems/blob/main/Task1/build.gradle), в котором прописаны определенные версии для самого Gradle. Они могут быть не совместимы с установленными у Вас версиями SDK. Поэтому этот файл, если будет ошибка запуска, следует обновить под доступные у Вас версии.
+В приведенном решении есть файл [build.gradle](https://github.com/gitmskhl/MultiAgentSystems/blob/main/Task1/build.gradle), который ссылается на jar'ник в папке libs с именем jade-4.5.0.jar. Добавьте папку libs на том же уровне вложения проекта, что и папка main и добавьте туда файл jar'ник. Если у него другое имя, то не забудьте поменять имя в файле build.gradle.
 
 ### Замечения к коду
 В файле [App.java](https://github.com/gitmskhl/MultiAgentSystems/blob/main/Task1/src/main/java/ru/spbu/mas/App.java) есть несколько методов инициализации, при выборе каждого из которых следует внимательно следить за параметром [APP.AGENT_NUMBERS](https://github.com/gitmskhl/MultiAgentSystems/blob/8182327325ce9ab84fa31071287ef665cc2a33a6/Task1/src/main/java/ru/spbu/mas/App.java#L12): 
